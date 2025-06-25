@@ -10,5 +10,5 @@ ${PASSWORD}    password
 ${USERNAME_Blocked}    user_mal
 ${PASSWORD_Blocked}    password_mal
 
-${USERNAME_INCORRECT}    user_incorrect
-${PASSWORD_INCORRECT}    password_incorrect
+${INVALID_USERNAME}    user_incorrect
+${INVALID_PASSWORD}    password_incorrect
