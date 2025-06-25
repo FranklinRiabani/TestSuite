@@ -12,3 +12,5 @@ ${PASSWORD_Blocked}    password_mal
 
 ${INVALID_USERNAME}    user_incorrect
 ${INVALID_PASSWORD}    password_incorrect
+
+${EMAIL}    user@email.com

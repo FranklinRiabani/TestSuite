@@ -21,3 +21,20 @@ Login con credenciales inválidas
     Ingresar Credenciales Invalidas
     Page Should Contain Element    xpath=//*[@id="error"]
     Cerrar Navegador
+
+Login con credenciales bloqueadas
+    [Documentation]    Verifica que el usuario no puede iniciar sesión con credenciales bloqueadas.
+    Abrir Navegador
+    Ir a pagina de inicio de sesión
+    Ingresar Credenciales Bloqueadas
+    Page Should Contain Element    xpath=//*[@id="error"]
+    Cerrar Navegador
+
+Recuperar contraseña
+    [Documentation]    Verifica que el usuario puede recuperar su contraseña.
+    Abrir Navegador
+    Ir a pagina de inicio de sesión
+    Ir a recuperar contraseña
+    Recuperar contraseña
+    Page Should Contain Element    xpath=//*[@id="confirmation"]
+    Cerrar Navegador

@@ -40,3 +40,26 @@ Ingresar Credenciales Invalidas
     Sleep    ${WAIT}
     Click Button    name=login
     Sleep    ${WAIT}
+
+Ingresar Credenciales Bloqueadas
+    [Documentation]    Enters invalid credentials into the login form.
+    Wait Until Page Contains Element   name=username
+    Input Text    id=username    ${USERNAME_Blocked}
+    Sleep    ${WAIT}
+    Input Text    id=password    ${PASSWORD_Blocked}
+    Sleep    ${WAIT}
+    Click Button    name=login
+    Sleep    ${WAIT}
+
+Ir a recuperar contraseña
+    [Documentation]    Navigates to the password recovery page.
+    Click Link    xpath=//*[@id="forgot-password"]
+    Sleep   ${WAIT}
+
+Recuperar contraseña
+    [Documentation]    Recovers the password by entering the email.
+    Wait Until Page Contains Element   name=email
+    Input Text    id=email    ${EMAIL}
+    Sleep    ${WAIT}
+    Click Button    name=submit
+    Sleep    ${WAIT}
