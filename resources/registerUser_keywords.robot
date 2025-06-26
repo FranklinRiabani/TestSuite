@@ -53,3 +53,9 @@ Ingresar datos de registro
     Sleep    ${WAIT}
     Click Button    name=registrar
     Sleep    ${WAIT}
+
+Ir a Lista Usuarios
+    [Documentation]    Navigates to the user list page.
+    Click Link    xpath=/html/body/a[2]
+    Sleep   ${WAIT}
+
