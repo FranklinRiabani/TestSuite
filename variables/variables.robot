@@ -14,3 +14,10 @@ ${INVALID_USERNAME}    user_incorrect
 ${INVALID_PASSWORD}    password_incorrect
 
 ${EMAIL}    user@email.com
+
+
+${NOMBRES}    Juan
+${APELLIDOS}    Perez
+${NEW_USERNAME}    juan.perez
+${NEW_PASSWORD}    new_password
+${NEW_EMAIL}    juan.perez@gmail.com
